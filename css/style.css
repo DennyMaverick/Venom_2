@@ -193,6 +193,7 @@ img {
 }
 .menu-button {
   display: none;
+  cursor: pointer;
 }
 .menu-close {
   display: none;
