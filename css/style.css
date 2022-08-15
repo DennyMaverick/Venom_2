@@ -523,9 +523,84 @@ p {
   }
 }
 
-
 /* HELPERS */
 
 .no-scrolled {
   overflow: hidden;
+}
+
+/** Media requests */
+
+@media (max-width: 780px) {
+  .actor__name {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .actor__info {
+    flex-direction: column;
+  }
+  .actor__right-info {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+  .actor__left-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .modal__inner {
+    padding-bottom: 40px;
+  }
+  .actor__name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .actor__photo {
+    min-height: 350px;
+  }
+
+  .actor__photo--mishel {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 390px) {
+  .actor__name {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 350px) {
+  .modal__inner {
+    padding: 25px;
+    padding-top: 45px;
+  }
+
+  .modal__close {
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .actor__name {
+    margin-bottom: 5px;
+  }
+
+  .actor__left-info {
+    margin-bottom: 5px;
+  }
 }
