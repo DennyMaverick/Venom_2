@@ -52,6 +52,7 @@ p {
 }
 .venom {
   position: absolute;
+  z-index: -100;
   top: 0;
   right: 0;
   max-width: 728px;
@@ -149,6 +150,16 @@ p {
 }
 .button-group {
   margin-top: 5%;
+}
+
+.button-active {
+  color: #8d0019;
+  background-color: white;
+  transition: background-color 0.2s ease-in;
+}
+
+.button-icon-active {
+  fill: #8d0019;
 }
 
 .blood {
@@ -597,10 +608,29 @@ p {
 
 @media (max-width: 330px) {
   .actor__name {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .actor__left-info {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+.film-date.premier-is-active {
+  animation: premier 5s;
+}
+
+@keyframes premier {
+  0% {
+    transform: translate(0, 0);
+    color: white;
+  }
+  25% {
+    transform: translate(200px, 0);
+    color: red;
+  }
+  100% {
+    transform: translate(0, 0);
+    color: white;
   }
 }

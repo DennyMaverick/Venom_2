@@ -6,7 +6,11 @@ $(function () {
   const bodyEl = document.querySelector("body")
   const modalСloseBtns = document.querySelectorAll(".modal__close")
   const modals = document.querySelectorAll(".modal")
-
+  const btns = document.querySelectorAll(".button")
+  const btnIcons = document.querySelectorAll(".button-icon")
+  const premierBtn = document.querySelector(".nav-menu-link-premier")
+  const date = document.querySelector(".film-date")
+  const menuLinks = document.querySelectorAll(".nav-menu-link")
   // Открытие модального окна меню
 
   menuButton.addEventListener("click", function () {
@@ -113,4 +117,41 @@ $(function () {
   $(".modal__inner").on("click", function (event) {
     event.stopPropagation()
   })
+
+  // При наведении на кнопки, происходит сброс активной и установка текущих стилей кнопки и иконки, для выбранной
+
+  btns.forEach((btn) => {
+    btn.addEventListener("mouseenter", function () {
+      btns.forEach((btn) => {
+        btn.classList.remove("button-active")
+      })
+      this.classList.add("button-active")
+    })
+  })
+  btnIcons.forEach((btn) => {
+    btn.addEventListener("mouseenter", function () {
+      btns.forEach((btn) => {
+        btn.classList.remove("button-icon-active")
+      })
+      this.classList.add("button-icon-active")
+    })
+  })
+
+  // Анимация при клике на пункт меню Премьера: выезжает дата премьеры фильма
+
+  premierBtn.addEventListener("click", () => {
+    date.classList.add("premier-is-active")
+    setTimeout(() => {
+      date.classList.remove("premier-is-active")
+    }, 5000)
+  })
+
+  // При клике на ссылки меню закрывать модальное окно меню
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      menu.classList.remove("is-active")
+      menuCloseButton.classList.remove("is-active")
+    })
+  })
+
 })
