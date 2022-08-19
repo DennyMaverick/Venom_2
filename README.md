@@ -1,6 +1,6 @@
 # Venom_2
 
-![main-photo](https://github.com/DennyMaverick/Archee/raw/main/images/readme.png)
+![main-photo](https://github.com/DennyMaverick/Venom_2/raw/main/images/readme.png)
 
 Работая над проектом, были использованы следующие технологии и инструменты:
 
