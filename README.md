@@ -12,6 +12,7 @@
   <li>Svg-спрайт</li>
   <li>Css-анимации (transition / animation @keyframes)</li>
   <li>Использование Git / GitHub</li>
+  <li>Адаптив под планшеты, мобильные устройства</li>
 </ul>
 
 Проект был создан в рамках интенсива от WEB-школы GLO-Academy. Мною был доработан: 
