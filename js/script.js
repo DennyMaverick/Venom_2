@@ -1,4 +1,6 @@
 $(function () {
+  const trailerWindow = document.querySelector(".trailer")
+  const playLink = document.querySelector(".play-link")
   const menuButton = document.querySelector(".menu-button")
   const menu = document.querySelector(".nav-menu")
   const menuCloseButton = document.querySelector(".menu-close")
@@ -27,11 +29,10 @@ $(function () {
 
   // Универсальное открытие модальных окон
 
-  modalBtns.forEach((btn) => {
+  modalBtns.forEach(function (btn) {
     btn.addEventListener("click", function (event) {
       event.preventDefault()
-
-      const currentModalID = event.target.dataset.modal
+      const currentModalID = event.target.closest(".modal-btn").dataset.modal
       const currentModal = document.querySelector(currentModalID)
 
       const currentModalInner = currentModal.querySelector(".modal__inner")
@@ -138,13 +139,14 @@ $(function () {
   })
 
   // Анимация при клике на пункт меню Премьера: выезжает дата премьеры фильма
-
-  premierBtn.addEventListener("click", () => {
-    date.classList.add("premier-is-active")
-    setTimeout(() => {
-      date.classList.remove("premier-is-active")
-    }, 5000)
-  })
+  if (premierBtn) {
+    premierBtn.addEventListener("click", () => {
+      date.classList.add("premier-is-active")
+      setTimeout(() => {
+        date.classList.remove("premier-is-active")
+      }, 5000)
+    })
+  }
 
   // При клике на ссылки меню закрывать модальное окно меню
   menuLinks.forEach((link) => {
@@ -154,4 +156,12 @@ $(function () {
     })
   })
 
+  trailerWindow.addEventListener("mouseenter", function () {
+    this.classList.add("trailer-hover--active")
+    playLink.style.display = "block"
+  })
+  trailerWindow.addEventListener("mouseout", function () {
+    this.classList.remove("trailer-hover--active")
+    playLink.style.display = "none"
+  })
 })
