@@ -1,6 +1,6 @@
 # Venom_2
 
-![main-photo](https://github.com/DennyMaverick/Archee/raw/main/images/readme.png)
+![main-photo](https://github.com/DennyMaverick/Venom_2/raw/main/images/readme.png)
 
 Работая над проектом, были использованы следующие технологии и инструменты:
 
@@ -12,6 +12,7 @@
   <li>Svg-спрайт</li>
   <li>Css-анимации (transition / animation @keyframes)</li>
   <li>Использование Git / GitHub</li>
+  <li>Адаптив под планшеты, мобильные устройства</li>
 </ul>
 
 Проект был создан в рамках интенсива от WEB-школы GLO-Academy. Мною был доработан: 
