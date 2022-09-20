@@ -54,6 +54,17 @@ $(function () {
         arrows: false,
         fade: true,
         adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              dots: true,
+              arrows: false,
+              // autoplay: true,
+              autoplaySpeed: 15000,
+            },
+          },
+        ],
       })
       // Листание слайдов вперед
 
