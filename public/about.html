@@ -4,14 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная - Venom 2</title>
-
-    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Venom - 2 Promo" />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <title>О фильме - Venom 2</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -19,7 +12,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="blood">
+  <body class="primary-bg">
     <div class="container">
       <header class="header">
         <a href="index.html" class="logo-link">
@@ -36,49 +29,72 @@
           </button>
           <ul class="nav-menu">
             <li class="nav-menu-item">
-              <a href="about.html" class="nav-menu-link">о фильме</a>
+              <a href="#" class="nav-menu-link">о фильме</a>
             </li>
             <li class="nav-menu-item">
               <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t" class="nav-menu-link">трейлер</a>
             </li>
             <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link modal-btn" data-modal="#actors">актеры</a>
+              <a href="#" class="nav-menu-link modal-btn" data-modal="#actors" >актеры</a>
             </li>
             <li class="nav-menu-item">
-              <a href="#" class="nav-menu-link nav-menu-link-premier">премьера</a>
+              <a href="index.html" class="nav-menu-link">премьера</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <section class="film">
-        <div class="film-text">
-          <span class="film-date">16 сентября 2021</span>
-          <img src="./images/venom-2.svg" alt="film-logo" class="film-logo" />
-          <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+      <div class="content">
+        <div class="col">
+          <h2 class="content-title">О фильме</h2>
+          <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+          <h3 class="content-subtitle">В главных ролях</h3>
+          <ul class="list column-2">
+            <li class="list-item">Том Харди</li>
+            <li class="list-item">Мишель Уильямс</li>
+            <li class="list-item">Вуди Харрельсон</li>
+            <li class="list-item">Наоми Харрис</li>
+            <li class="list-item">Стивен Грэм</li>
+            <li class="list-item">Рейд Скотт</li>
+            <li class="list-item">Эд Кейр</li>
+            <li class="list-item">Шон Делани</li>
+            <li class="list-item">Уилльям Барбо</li>
+            <li class="list-item">Пегги Лу</li>
+          </ul>
+          <div class="trailer" data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t">
+            <a class="play play-link">
+              <img width="15" src="./images/play.svg" alt="icon: play" class="play-icon" />
+            </a>
+          </div>
         </div>
-        <!-- /.film-text -->
-        <!-- -ezfi6FQ8Ds -->
-        <div class="button-group">
-          <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t" class="button button-primary button-active">
-            <svg class="button-icon button-icon-active button-primary-icon">
-              <use xlink:href="./images/sprite.svg#play" />
-            </svg>
-            <span class="button-text">смотреть трейлер</span>
-          </a>
-          <a href="#" class="button button-ticket">
-            <svg class="button-icon button-ticket-icon">
-              <use xlink:href="./images/sprite.svg#ticket" />
-            </svg>
-            <span class="button-text">билеты на премьеру</span>
-          </a>
+        <!-- /.col -->
+        <div class="col">
+          <div class="poster-wrapper">
+            <button class="box-img modal-btn" data-modal="#actors">
+              <img src="./images/poster.jpg" alt="image: poster Venom - 2" class="poster" />
+            </button>
+            <div class="creators">
+              <h3 class="content-subtitle">Режиссер</h3>
+              <ul class="list">
+                <li class="list-item">Энди Серкис</li>
+              </ul>
+              <h3 class="content-subtitle">Сценарий</h3>
+              <ul class="list">
+                <li class="list-item">Келли Марсел</li>
+                <li class="list-item">Том Харди</li>
+              </ul>
+              <h3 class="content-subtitle">Продюссеры</h3>
+              <ul class="list">
+                <li class="list-item">Ави Арад</li>
+                <li class="list-item">Том Харди</li>
+                <li class="list-item">Келли Марсел</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- / .film -->
+        <!-- /.col -->
+      </div>
     </div>
-
-    <img src="./images/venom.png" alt="photo: venom" class="venom" />
-
     <div class="modal" id="actors">
       <div class="modal__inner modal__container">
         <div class="modal__close">
@@ -129,7 +145,9 @@
                 </div>
               </div>
               <div class="actor__right-info rigth-info">
-                <p class="actor__about">Ву́ди Ха́ррельсон (англ. Woody Harrelson; родился 23 июля 1961, Мидленд, Техас, США) — американский актёр, продюсер и драматург, обладатель премии «Эмми» (1989), трёхкратный номинант на премию «Оскар» (1997, 2010, 2018), четырёхкратный номинант на «Золотой глобус» (1997, 2010, 2013, 2015).</p>
+                <p class="actor__about">
+                  Ву́ди Ха́ррельсон (англ. Woody Harrelson; родился 23 июля 1961, Мидленд, Техас, США) — американский актёр, продюсер и драматург, обладатель премии «Эмми» (1989), трёхкратный номинант на премию «Оскар» (1997, 2010, 2018), четырёхкратный номинант на «Золотой глобус» (1997, 2010, 2013, 2015).
+                </p>
                 <div class="right-info__footer">
                   <button type="button" class="btn slickPrev slick-btn">Назад</button>
                   <button type="button" class="btn slickNext slick-btn">Вперед</button>
@@ -140,8 +158,7 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
