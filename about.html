@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О фильме - Venom 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="primary-bg">
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="logo-link">
+          <img width="46" height="71" src="./images/logo.svg" alt="logo" class="logo-image" />
+        </a>
+        <nav class="nav">
+          <button class="menu-button">
+            <span class="menu-button-text">меню</span>
+            <img src="./images/menu.svg" alt="icon: burger menu" class="menu-button-icon" />
+          </button>
+          <button class="menu-close">
+            <span class="menu-close-text">закрыть</span>
+            <img src="./images/close-arrow.svg" alt="icon: arrow right" />
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link">о фильме</a>
+            </li>
+            <li class="nav-menu-item">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t" class="nav-menu-link">трейлер</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link modal-btn" data-modal="#actors" >актеры</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="index.html" class="nav-menu-link">премьера</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <div class="col">
+          <h2 class="content-title">О фильме</h2>
+          <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+          <h3 class="content-subtitle">В главных ролях</h3>
+          <ul class="list column-2">
+            <li class="list-item">Том Харди</li>
+            <li class="list-item">Мишель Уильямс</li>
+            <li class="list-item">Вуди Харрельсон</li>
+            <li class="list-item">Наоми Харрис</li>
+            <li class="list-item">Стивен Грэм</li>
+            <li class="list-item">Рейд Скотт</li>
+            <li class="list-item">Эд Кейр</li>
+            <li class="list-item">Шон Делани</li>
+            <li class="list-item">Уилльям Барбо</li>
+            <li class="list-item">Пегги Лу</li>
+          </ul>
+          <div class="trailer" data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t">
+            <a class="play play-link">
+              <img width="15" src="./images/play.svg" alt="icon: play" class="play-icon" />
+            </a>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col">
+          <div class="poster-wrapper">
+            <button class="box-img modal-btn" data-modal="#actors">
+              <img src="./images/poster.jpg" alt="image: poster Venom - 2" class="poster" />
+            </button>
+            <div class="creators">
+              <h3 class="content-subtitle">Режиссер</h3>
+              <ul class="list">
+                <li class="list-item">Энди Серкис</li>
+              </ul>
+              <h3 class="content-subtitle">Сценарий</h3>
+              <ul class="list">
+                <li class="list-item">Келли Марсел</li>
+                <li class="list-item">Том Харди</li>
+              </ul>
+              <h3 class="content-subtitle">Продюссеры</h3>
+              <ul class="list">
+                <li class="list-item">Ави Арад</li>
+                <li class="list-item">Том Харди</li>
+                <li class="list-item">Келли Марсел</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /.col -->
+      </div>
+    </div>
+    <div class="modal" id="actors">
+      <div class="modal__inner modal__container">
+        <div class="modal__close">
+          <span class="modal__close-line"></span>
+          <span class="modal__close-line"></span>
+        </div>
+        <div class="slider-actor actors">
+          <div class="actors__item actor">
+            <h2 class="actor__name">Том Харди</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo">
+                  <img class="actor__image" src="./images/tom_hardi.jpg" alt="актер Том Харди фото" />
+                </div>
+              </div>
+              <div class="actor__right-info right-info">
+                <p class="actor__about">Эдвард Томас (Том) Харди (Edward Thomas «Tom» Hardy) является обладателем главной роли фильма Веном 2. Он родился 15 сентября 1977 года в лондонском Хаммерсмите (Англия, Великобритания) в творческой семье. Мать актера, Энн Харди, работала художником, а отец, Эдуард «Чипс» Харди, писал комедии и сценарии для рекламных роликов.</p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-prev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-next slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actors__item actor">
+            <h2 class="actor__name">Мишель Уильямс</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo actor__photo--mishel">
+                  <img class="actor__image" src="./images/mishel_yilliams.png" alt="актриса Мишель Уильямс фото" />
+                </div>
+              </div>
+              <div class="actor__right-info right-info">
+                <p class="actor__about">Мишель Ингрид Уильямс родилась 9 сентября 1980 года в Калиспелле, штат Монтана, в семье ныне разведённых домохозяйки Карлы Ингрид Свенсон и биржевого трейдера Ларри Ричарда Уильямса. Она имеет норвежские корни со стороны матери. Уильямс росла вместе с тремя сводными братьями и сёстрами от первого брака отца, а также младшей сестрой Пейдж. Когда ей было девять лет, семья переехала в Сан-Диего. Уильямс заинтересовалась актёрством после просмотра театральной постановки «Приключения Тома Сойера».</p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actors__item actor">
+            <h2 class="actor__name">Вуди Харрельсон</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo">
+                  <img class="actor__image" src="./images/woody-harrelson.jpeg" alt="Вуди Харрельсон фото" />
+                </div>
+              </div>
+              <div class="actor__right-info rigth-info">
+                <p class="actor__about">
+                  Ву́ди Ха́ррельсон (англ. Woody Harrelson; родился 23 июля 1961, Мидленд, Техас, США) — американский актёр, продюсер и драматург, обладатель премии «Эмми» (1989), трёхкратный номинант на премию «Оскар» (1997, 2010, 2018), четырёхкратный номинант на «Золотой глобус» (1997, 2010, 2013, 2015).
+                </p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

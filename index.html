@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная - Venom 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="blood">
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="logo-link">
+          <img width="46" height="71" src="./images/logo.svg" alt="logo" class="logo-image" />
+        </a>
+        <nav class="nav">
+          <button class="menu-button">
+            <span class="menu-button-text">меню</span>
+            <img src="./images/menu.svg" alt="icon: burger menu" class="menu-button-icon" />
+          </button>
+          <button class="menu-close">
+            <span class="menu-close-text">закрыть</span>
+            <img src="./images/close-arrow.svg" alt="icon: arrow right" />
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="about.html" class="nav-menu-link">о фильме</a>
+            </li>
+            <li class="nav-menu-item">
+              <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t" class="nav-menu-link">трейлер</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link modal-btn" data-modal="#actors">актеры</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#" class="nav-menu-link nav-menu-link-premier">премьера</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="film">
+        <div class="film-text">
+          <span class="film-date">16 сентября 2021</span>
+          <img src="./images/venom-2.svg" alt="film-logo" class="film-logo" />
+          <p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
+        </div>
+        <!-- /.film-text -->
+        <!-- -ezfi6FQ8Ds -->
+        <div class="button-group">
+          <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&t" class="button button-primary button-active">
+            <svg class="button-icon button-icon-active button-primary-icon">
+              <use xlink:href="./images/sprite.svg#play" />
+            </svg>
+            <span class="button-text">смотреть трейлер</span>
+          </a>
+          <a href="#" class="button button-ticket">
+            <svg class="button-icon button-ticket-icon">
+              <use xlink:href="./images/sprite.svg#ticket" />
+            </svg>
+            <span class="button-text">билеты на премьеру</span>
+          </a>
+        </div>
+      </section>
+      <!-- / .film -->
+    </div>
+
+    <img src="./images/venom.png" alt="photo: venom" class="venom" />
+
+    <div class="modal" id="actors">
+      <div class="modal__inner modal__container">
+        <div class="modal__close">
+          <span class="modal__close-line"></span>
+          <span class="modal__close-line"></span>
+        </div>
+        <div class="slider-actor actors">
+          <div class="actors__item actor">
+            <h2 class="actor__name">Том Харди</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo">
+                  <img class="actor__image" src="./images/tom_hardi.jpg" alt="актер Том Харди фото" />
+                </div>
+              </div>
+              <div class="actor__right-info right-info">
+                <p class="actor__about">Эдвард Томас (Том) Харди (Edward Thomas «Tom» Hardy) является обладателем главной роли фильма Веном 2. Он родился 15 сентября 1977 года в лондонском Хаммерсмите (Англия, Великобритания) в творческой семье. Мать актера, Энн Харди, работала художником, а отец, Эдуард «Чипс» Харди, писал комедии и сценарии для рекламных роликов.</p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-prev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-next slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actors__item actor">
+            <h2 class="actor__name">Мишель Уильямс</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo actor__photo--mishel">
+                  <img class="actor__image" src="./images/mishel_yilliams.png" alt="актриса Мишель Уильямс фото" />
+                </div>
+              </div>
+              <div class="actor__right-info right-info">
+                <p class="actor__about">Мишель Ингрид Уильямс родилась 9 сентября 1980 года в Калиспелле, штат Монтана, в семье ныне разведённых домохозяйки Карлы Ингрид Свенсон и биржевого трейдера Ларри Ричарда Уильямса. Она имеет норвежские корни со стороны матери. Уильямс росла вместе с тремя сводными братьями и сёстрами от первого брака отца, а также младшей сестрой Пейдж. Когда ей было девять лет, семья переехала в Сан-Диего. Уильямс заинтересовалась актёрством после просмотра театральной постановки «Приключения Тома Сойера».</p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actors__item actor">
+            <h2 class="actor__name">Вуди Харрельсон</h2>
+            <div class="actor__info">
+              <div class="actor__left-info">
+                <div class="actor__photo">
+                  <img class="actor__image" src="./images/woody-harrelson.jpeg" alt="Вуди Харрельсон фото" />
+                </div>
+              </div>
+              <div class="actor__right-info rigth-info">
+                <p class="actor__about">
+                  Ву́ди Ха́ррельсон (англ. Woody Harrelson; родился 23 июля 1961, Мидленд, Техас, США) — американский актёр, продюсер и драматург, обладатель премии «Эмми» (1989), трёхкратный номинант на премию «Оскар» (1997, 2010, 2018), четырёхкратный номинант на «Золотой глобус» (1997, 2010, 2013, 2015).
+                </p>
+                <div class="right-info__footer">
+                  <button type="button" class="btn slickPrev slick-btn">Назад</button>
+                  <button type="button" class="btn slickNext slick-btn">Вперед</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
